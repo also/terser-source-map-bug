@@ -1,0 +1,1 @@
+{"version":3,"sources":["a.js","b.js"],"names":[],"mappings":"AAAA;;ACAA","sourcesContent":["console.log('a');\n","console.log('b');\n"]}

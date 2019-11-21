@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "dependencies": {
+    "source-map": "^0.7.3",
+    "terser": "^4.4.0",
+    "uglify-es": "^3.3.9"
+  },
+  "scripts": {
+    "uglify-bundle": "uglifyjs dist/bundle.js --source-map content='dist/bundle.js.map' -o dist/bundle.uglifyjs.js",
+    "terser-bundle": "terser dist/bundle.js --source-map content='dist/bundle.js.map' -o dist/bundle.terser.js",
+    "build": "node build && npm run uglify-bundle && npm run terser-bundle"
+  }
+}
